@@ -147,7 +147,7 @@ def encode(filmName,videoName,resolutionMulti,fpsMulti,packetSize):
     
 
     videoCapture.release()
-    cv.destroyAllWindows()
+
 
     if scaledFrames != scaledFrameIterations:
         print(f"Frame Estimation Error. Predited:{str(scaledFrames)}, Actual:{str(scaledFrameIterations)}")
